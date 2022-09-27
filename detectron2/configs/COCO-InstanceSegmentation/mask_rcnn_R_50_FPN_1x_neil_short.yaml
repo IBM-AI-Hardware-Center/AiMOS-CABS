@@ -1,0 +1,11 @@
+_BASE_: "../Base-RCNN-FPN-shorter.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+SOLVER:
+  MAX_ITER: 100
+TEST:
+  EVAL_PERIOD: 100
+  DETECTIONS_PER_IMAGE: 50
