@@ -1,0 +1,2 @@
+git+https://github.com/NVIDIA/dllogger
+nibabel==3.2.1
